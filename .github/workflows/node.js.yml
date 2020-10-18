@@ -25,3 +25,7 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+    - name: ESLint
+      run: eslint .
+    - name: Prettier
+      uses: creyD/prettier_action@v3.0
