@@ -6,6 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      - run: npm install eslint -D
       - run: npm install eslint-plugin-react@latest --save-dev
       - name: eslint
         uses: reviewdog/action-eslint@v1
