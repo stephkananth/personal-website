@@ -1,0 +1,9 @@
+name: Prettier CI
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Prettier Action
+      uses: creyD/prettier_action@v3.0
+ 
